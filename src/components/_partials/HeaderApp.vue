@@ -9,20 +9,17 @@ export default {
     };
   },
   mounted() {
-    gsap.set(["a", "li"], {
-      autoAlpha: 0,
+    gsap.set([".logo", ".nav li"], {
       y: -200,
     });
 
-    gsap.to("a", {
-      autoAlpha: 1,
+    gsap.to(".logo", {
       y: 0,
       duration: 2,
       ease: "bounce",
     });
 
-    gsap.to("li", {
-      autoAlpha: 1,
+    gsap.to(".nav li", {
       y: 0,
       duration: 2,
       ease: "power2.out",
@@ -36,7 +33,7 @@ export default {
   <header
     class="mx-6 my-4 pb-4 flex flex-col items-center border-b border-testo sm:flex-row sm:justify-between sm:items-center"
   >
-    <a href="/" class="text-2xl font-black">
+    <a href="/" class="logo text-2xl font-black">
       GSAP<span class="text-verde mx-1">4</span>NOOBS
     </a>
 
