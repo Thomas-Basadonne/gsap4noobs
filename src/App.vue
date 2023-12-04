@@ -1,8 +1,8 @@
 <script>
-import { onMounted } from "vue";
-import { gsap } from "gsap";
 import HeaderApp from "./components/_partials/HeaderApp.vue";
 import FooterApp from "./components/_partials/FooterApp.vue";
+
+import Jumbotron from "./components/home/Jumbotron.vue";
 
 export default {
   data() {
@@ -12,14 +12,20 @@ export default {
   },
   components: {
     HeaderApp,
+    Jumbotron,
     FooterApp,
   },
 };
 </script>
 
 <template>
-  <HeaderApp />
-  <h1 class="p text-3xl font-bold underline">Hello world!</h1>
+  <div class="flex flex-col justify-between">
+    <HeaderApp />
+    <Jumbotron />
+    <footer class="absolute bottom-0 w-full">
+      <FooterApp />
+    </footer>
+  </div>
 </template>
 
 <style scoped></style>

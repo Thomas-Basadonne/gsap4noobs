@@ -15,7 +15,7 @@ export default {
 </script>
 
 <template>
-  <footer class="bg-testo text-sfondo absolute bottom-0 left-0 w-full">
+  <footer class="bg-testo text-sfondo w-full">
     <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
       <div class="md:flex md:justify-between">
         <div class="mb-6 md:mb-0">

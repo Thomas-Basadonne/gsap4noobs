@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   html {
-    @apply bg-sfondo text-testo;
+    @apply bg-sfondo text-testo selection:bg-verde selection:text-sfondo;
     font-family: "Roboto", sans-serif;
   }
 }
