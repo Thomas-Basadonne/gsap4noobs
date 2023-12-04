@@ -16,8 +16,15 @@ export default {
 
 <template>
   <div class="jumbo mb-4 mx-6">
-    <div class="testo h-jumbo w-auto">
-      <span>Animate</span> <span>anyth!ng</span>
+    <div class="testo h-[60vh] flex flex-col justify-center items-center">
+      <span
+        class="mr-16 sm:mr-56 text-center text-[3rem] sm:text-8xl md:text-9xl lg:text-[15rem] font-bold tracking-wide"
+        >Animate</span
+      >
+      <span
+        class="leading-3 ml-16 sm:ml-56 text-center text-[3rem] sm:text-8xl md:text-9xl lg:text-[15rem] font-bold tracking-wide"
+        >anyth!ng</span
+      >
     </div>
 
     <div class="subtitle flex items-center justify-between">

@@ -22,7 +22,7 @@ export default {
   <div class="flex flex-col justify-between">
     <HeaderApp />
     <Jumbotron />
-    <footer class="absolute bottom-0 w-full">
+    <footer class="mt-10 relative bottom-0 w-full">
       <FooterApp />
     </footer>
   </div>

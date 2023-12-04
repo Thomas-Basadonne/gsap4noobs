@@ -33,10 +33,16 @@ export default {
             </h2>
             <ul class="text-gray-500 font-medium">
               <li class="mb-4">
-                <a href="https://gsap.com/" class="hover:underline">Gsap</a>
+                <a
+                  href="https://gsap.com/"
+                  class="hover:underline transition duration-300 ease-in-out hover:text-sfondo"
+                  >Gsap</a
+                >
               </li>
               <li>
-                <a href="https://tailwindcss.com/" class="hover:underline"
+                <a
+                  href="https://tailwindcss.com/"
+                  class="hover:underline transition duration-300 ease-in-out hover:text-sfondo"
                   >Tailwind CSS</a
                 >
               </li>
@@ -50,14 +56,14 @@ export default {
               <li class="mb-4">
                 <a
                   href="https://github.com/Thomas-Basadonne"
-                  class="hover:underline"
+                  class="hover:underline transition duration-300 ease-in-out hover:text-sfondo"
                   >Github</a
                 >
               </li>
               <li>
                 <a
                   href="https://www.linkedin.com/in/thomasbasadonne/"
-                  class="hover:underline"
+                  class="hover:underline transition duration-300 ease-in-out hover:text-sfondo"
                   >LinkedIn</a
                 >
               </li>
@@ -69,10 +75,18 @@ export default {
             </h2>
             <ul class="text-gray-500 font-medium">
               <li class="mb-4">
-                <a href="#" class="hover:underline">Docs</a>
+                <a
+                  href="#"
+                  class="hover:underline transition duration-300 ease-in-out hover:text-sfondo"
+                  >Docs</a
+                >
               </li>
               <li>
-                <a href="#" class="hover:underline">Contacts</a>
+                <a
+                  href="#"
+                  class="hover:underline transition duration-300 ease-in-out hover:text-sfondo"
+                  >Contacts</a
+                >
               </li>
             </ul>
           </div>
@@ -84,14 +98,16 @@ export default {
       <div class="sm:flex sm:items-center sm:justify-between">
         <span class="text-sm text-gray-500 sm:text-center"
           >© 2023
-          <a href="https://thomasbasadonne.com/" class="hover:underline"
+          <a
+            href="https://thomasbasadonne.com/"
+            class="hover:underline transition duration-300 ease-in-out hover:text-sfondo"
             >Thomas Basadonne</a
           >. All Rights Reserved.
         </span>
         <div class="flex mt-4 sm:justify-center sm:mt-0">
           <a
             href="#"
-            class="text-gray-500 hover:text-sfondo dark:hover:text-white ms-5"
+            class="text-gray-500 transition duration-300 ease-in-out hover:text-sfondo dark:hover:text-white ms-5"
           >
             <svg
               class="w-4 h-4"
@@ -108,7 +124,7 @@ export default {
           </a>
           <a
             href="#"
-            class="text-gray-500 hover:text-sfondo dark:hover:text-white ms-5"
+            class="text-gray-500 transition duration-300 ease-in-out hover:text-sfondo dark:hover:text-white ms-5"
           >
             <svg
               class="w-4 h-4"
@@ -127,7 +143,7 @@ export default {
           </a>
           <a
             href="#"
-            class="text-gray-500 hover:text-sfondo dark:hover:text-white ms-5"
+            class="text-gray-500 transition duration-300 ease-in-out hover:text-sfondo dark:hover:text-white ms-5"
           >
             <svg
               class="w-4 h-4"

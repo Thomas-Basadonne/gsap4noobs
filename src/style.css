@@ -5,7 +5,11 @@
 
 @layer base {
   html {
-    @apply bg-sfondo text-testo selection:bg-verde selection:text-sfondo;
+    @apply bg-sfondo text-testo selection:bg-verde selection:text-sfondo overflow-x-hidden;
     font-family: "Roboto", sans-serif;
+  }
+
+  .hover-link {
+    @apply text-testo2 transition duration-300 ease-in-out hover:text-testo;
   }
 }

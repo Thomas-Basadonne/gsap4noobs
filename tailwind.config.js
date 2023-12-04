@@ -6,7 +6,7 @@ export default {
       colors: {
         sfondo: "#0E100F",
         testo: "#FFFCE2",
-        "doc-bg": "#0D100F",
+        testo2: "#7c7c6f",
         verde: "#1AE348",
         sky: "#17BAE2",
         pink: "#FEC5FC",

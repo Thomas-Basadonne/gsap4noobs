@@ -38,10 +38,35 @@ export default {
     </a>
 
     <ul class="nav hidden sm:flex sm:flex-row sm:gap-4">
-      <li><a href="http://">Showcase</a></li>
-      <li><a href="http://">Install</a></li>
-      <li><a href="http://">Docs</a></li>
-      <li><a href="http://">Contacts</a></li>
+      <li>
+        <a
+          href="http://"
+          class="hover-link"
+          >Showcase</a
+        >
+      </li>
+
+      <li>
+        <a
+          href="http://"
+          class="hover-link"
+          >Install</a
+        >
+      </li>
+      <li>
+        <a
+          href="http://"
+          class="hover-link"
+          >Docs</a
+        >
+      </li>
+      <li>
+        <a
+          href="http://"
+          class="hover-link"
+          >Contacts</a
+        >
+      </li>
     </ul>
   </header>
 </template>
