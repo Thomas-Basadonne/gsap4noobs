@@ -150,11 +150,6 @@ export default {
               alt="" /></span
           >imate</span
         >
-        <img
-          class="forma formaD w-12 md:w-20 lg:w-29 z-50 self-start"
-          src="../../assets/img/forma2.png"
-          alt=""
-        />
       </div>
 
       <span

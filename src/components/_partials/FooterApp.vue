@@ -26,7 +26,7 @@ export default {
           </a>
           <!-- AGGIUNGERE ANIMAZIONE GIRANDOLA TIPO -->
         </div>
-        <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+        <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-4">
           <div>
             <h2 class="mb-6 text-sm font-semibold text-sfondo uppercase">
               Resources
@@ -90,11 +90,16 @@ export default {
               </li>
             </ul>
           </div>
+          <div>
+            <img
+              class="forma formaD w-12 md:w-20 lg:w-29 z-50 self-start"
+              src="../../assets/img/forma2.png"
+              alt=""
+            />
+          </div>
         </div>
       </div>
-      <hr
-        class="m-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
-      />
+      <hr class="m-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
       <div class="sm:flex sm:items-center sm:justify-between">
         <span class="text-sm text-gray-500 sm:text-center"
           >© 2023
