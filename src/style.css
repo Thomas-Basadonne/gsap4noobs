@@ -5,7 +5,7 @@
 
 @layer base {
   html {
-    @apply bg-sfondo text-testo selection:bg-verde selection:text-sfondo overflow-x-hidden h-screen w-screen;
+    @apply bg-sfondo text-testo selection:bg-verde selection:text-sfondo overflow-x-hidden h-screen;
     font-family: "Roboto", sans-serif;
   }
 

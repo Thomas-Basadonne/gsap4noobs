@@ -23,8 +23,9 @@ export default {
     <HeaderApp />
     <main class="flex-grow w-full">
       <Jumbotron />
+      <hr class="mx-6 my-16" />
     </main>
-    <footer class="md:absolute bottom-0 w-full">
+    <footer class="bottom-0 w-full">
       <FooterApp />
     </footer>
   </div>
