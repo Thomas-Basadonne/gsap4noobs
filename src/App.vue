@@ -19,10 +19,12 @@ export default {
 </script>
 
 <template>
-  <div class="flex flex-col justify-between">
+  <div class="flex flex-col justify-between min-h-screen">
     <HeaderApp />
-    <Jumbotron />
-    <footer class="mt-10 relative bottom-0 w-full">
+    <main class="flex-grow w-full">
+      <Jumbotron />
+    </main>
+    <footer class="md:absolute bottom-0 w-full">
       <FooterApp />
     </footer>
   </div>
