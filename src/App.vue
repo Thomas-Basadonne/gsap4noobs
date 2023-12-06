@@ -3,6 +3,7 @@ import HeaderApp from "./components/_partials/HeaderApp.vue";
 import FooterApp from "./components/_partials/FooterApp.vue";
 
 import Jumbotron from "./components/home/Jumbotron.vue";
+import ShowCase from "./components/home/ShowCase.vue";
 
 export default {
   data() {
@@ -14,6 +15,7 @@ export default {
     HeaderApp,
     Jumbotron,
     FooterApp,
+    ShowCase,
   },
 };
 </script>
@@ -24,6 +26,7 @@ export default {
     <main class="flex-grow w-full">
       <Jumbotron />
       <hr class="mx-6 my-16" />
+      <ShowCase />
     </main>
     <footer class="bottom-0 w-full">
       <FooterApp />
