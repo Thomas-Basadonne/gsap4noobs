@@ -8,6 +8,7 @@ export default {
     };
   },
   mounted() {
+    // Gestione animazioni Scritta Jumbotron
     gsap.from(".animate", {
       duration: 1.5,
       ease: "power1.out",
@@ -61,6 +62,7 @@ export default {
       },
     });
 
+    // Animazione Asterischi
     gsap.from(".asterisco", {
       autoAlpha: 0,
       delay: 1.5,
@@ -75,6 +77,55 @@ export default {
       },
     });
 
+    // Animazione p graffe
+    const graffeDiv = document.querySelector(".graffe");
+
+    gsap.set(graffeDiv, { opacity: 0 });
+
+    gsap.to(graffeDiv, {
+      opacity: 1,
+      delay: 2,
+      duration: 3,
+    });
+
+    // Animazione main-btn
+    const button = document.querySelector(".main-btn");
+
+    //animazione ingrasso
+    gsap.from(button, {
+      duration: 2,
+      x: 300,
+    });
+
+    // Animazione su hover
+    button.addEventListener("mouseenter", () => {
+      gsap.to(button, {
+        backgroundColor: "#1AE348", // Cambia il colore di sfondo a rosso
+        duration: 0.5,
+      });
+    });
+
+    button.addEventListener("mouseleave", () => {
+      gsap.to(button, {
+        backgroundColor: "#0E100F", // Ripristina il colore di sfondo a verde
+        duration: 0.5,
+      });
+    });
+
+    // Animazione su click
+    button.addEventListener("click", () => {
+      gsap.to(button, {
+        scale: 1.2, // Aumenta la scala del pulsante al 120%
+        duration: 0.5,
+        ease: "elastic",
+        onComplete: () => {
+          gsap.to(button, { scale: 1, duration: 0.5 }); // Ripristina la scala a 100%
+        },
+      });
+    });
+    // Animazioni forme colorate
+
+    // Animazione spirale arancione
     gsap.from(".spirale", {
       duration: 3,
       autoAlpha: 1,
@@ -94,15 +145,19 @@ export default {
       },
     });
 
+    //forma jumbo
     gsap.from(".formaS", {
       duration: 3,
       x: -200,
     });
 
+    // forma footer
     gsap.from(".formaD", {
       duration: 3,
       x: 200,
     });
+
+    // animazione forme allo spostamento mouse
     gsap.to(".forma", {
       delay: 3,
       onComplete() {
@@ -120,7 +175,7 @@ export default {
             duration: 0.5,
             x: deltaX * 20, // Modifica la sensibilità e l'ampiezza del movimento
             y: deltaY * 20,
-            ease: "power2.out", // Puoi cambiare l'opzione ease a tuo piacimento
+            ease: "power2.out",
           });
         });
       },
@@ -176,14 +231,17 @@ export default {
           src="../../assets/img/asterisco.png"
           alt=""
         />
-        <div class="w-1/8 text-7xl font-light text-right mr-1">{</div>
-        <div class="w-3/5 text-center font-bold">
-          Newbies Edition, impara le basi di GSAP e rendi unici i tuoi progetti!
+        <div class="graffe flex items-center">
+          <div class="w-1/8 text-7xl font-light text-right mr-1">{</div>
+          <div class="w-3/5 text-center font-bold">
+            Newbies Edition, impara le basi di GSAP e rendi unici i tuoi
+            progetti!
+          </div>
+          <div class="w-1/8 text-7xl font-light text-left ml-1">}</div>
         </div>
-        <div class="w-1/8 text-7xl font-light text-left ml-1">}</div>
       </div>
       <button
-        class="border-2 border-verde font-bold rounded-3xl px-16 py-2 my-10 w-full md:w-fit md:mr-14"
+        class="main-btn border-2 border-verde font-bold rounded-3xl px-16 py-2 my-10 w-full md:w-fit md:mr-14"
       >
         Vai alla Doc
       </button>

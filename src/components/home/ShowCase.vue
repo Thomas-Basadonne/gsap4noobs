@@ -1,12 +1,9 @@
 <script>
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import BtnRotate from "../_partials/BtnRotate.vue";
 export default {
-  data() {
-    return {
-      title: "Hello world",
-    };
-  },
+  components: { BtnRotate },
   mounted() {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -100,21 +97,22 @@ export default {
     </div>
   </div>
 
-  <button
-    class="info text-4xl font-black p-2 border rounded-full h-12 w-12 align-middle"
-  >
-    +
-  </button>
-  <div class="more my-5 mr-5 text-end" style="opacity: 0">
-    <h2 class="font-black text-2xl">Non ti bastano?</h2>
-    <p class="font-bold text-lg">
-      Lasciati ispirare dallo
-      <a
-        href="https://gsap.com/showcase/"
-        class="text-verde hover:scale-100 hover:underline"
-        >Showcase ufficiale</a
-      >
-    </p>
+  <div class="h-fit flex justify-end">
+    <BtnRotate class="info z-40 cursor-pointer" />
+    <div
+      class="more h-[200px] my-5 mr-5 text-end flex flex-col justify-center"
+      style="opacity: 0"
+    >
+      <h2 class="font-black text-2xl">Non ti bastano?</h2>
+      <p class="font-bold text-lg whitespace-nowrap">
+        Lasciati ispirare dallo
+        <a
+          href="https://gsap.com/showcase/"
+          class="text-verde hover:scale-100 hover:underline"
+          >Showcase ufficiale</a
+        >
+      </p>
+    </div>
   </div>
 </template>
 
