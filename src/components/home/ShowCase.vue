@@ -88,15 +88,43 @@ export default {
 
   <div class="racesWrapper">
     <div class="races">
-      <img src="../../assets/img/showcase/showcase1.png" alt="" />
-      <img src="../../assets/img/showcase/showcase2.png" alt="" />
-      <img src="../../assets/img/showcase/showcase3.png" alt="" />
-      <img src="../../assets/img/showcase/showcase4.png" alt="" />
-      <img src="../../assets/img/showcase/showcase5.png" alt="" />
-      <img src="../../assets/img/showcase/showcase6.png" alt="" />
+      <div class="slide">
+        <img src="../../assets/img/showcase/showcase1.png" alt="" />
+        <div class="slide-text">
+          <a href="https://lnkd.in/dkHdcEFi" target="_blank">Snake Game</a> /
+          Gianluca Lomarco
+        </div>
+      </div>
+      <div class="slide">
+        <img src="../../assets/img/showcase/showcase3.png" alt="" />
+        <div class="slide-text">
+          <a href="https://liefamsterdam.nl/" target="_blank">Lief</a> / Nicolas
+          Garnier
+        </div>
+      </div>
+      <div class="slide">
+        <img src="../../assets/img/showcase/showcase2.png" alt="" />
+        <div class="slide-text">
+          <a href="https://makepill.com/en" target="_blank">Make Pill</a>
+          / Agency
+        </div>
+      </div>
+      <div class="slide">
+        <img src="../../assets/img/showcase/showcase4.png" alt="" />
+        <div class="slide-text">
+          <a href="https://noomoagency.com/" target="_blank">Noomo</a> / Netrix
+        </div>
+      </div>
+      <div class="slide">
+        <img src="../../assets/img/showcase/showcase5.png" alt="" />
+        <div class="slide-text">
+          <a href="https://lnkd.in/dkHdcEFi" target="_blank">Cyd Stumpel</a> /
+          Portfolio
+        </div>
+      </div>
     </div>
   </div>
-
+  <!-- FIX RESPONSIVE ROTATE BTN -->
   <div class="h-[250px] flex justify-end items-center">
     <BtnRotate class="info z-40 cursor-pointer" />
     <div
@@ -121,16 +149,29 @@ export default {
   width: fit-content;
   display: flex;
   flex-wrap: nowrap;
+  position: relative;
+}
+.slide {
+  position: relative;
 }
 
-.races img {
+.races .slide {
   flex-shrink: 0;
   padding-right: 0.8em;
   padding-left: 0.8em;
   margin: 0;
 }
 
-.races h2:last-of-type {
-  background: #e1e1ff;
+.slide-text {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  z-index: 1;
+  padding: 1rem 2rem;
+  background-color: #0e100f;
+  border-radius: 25px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 </style>
