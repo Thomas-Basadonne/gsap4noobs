@@ -25,7 +25,7 @@ export default {
     <HeaderApp />
     <main class="flex-grow w-full">
       <Jumbotron />
-      <hr class="mx-6 my-16" />
+      <hr class="mx-6 my-16 border-testo" />
       <ShowCase />
     </main>
     <footer class="bottom-0 w-full">

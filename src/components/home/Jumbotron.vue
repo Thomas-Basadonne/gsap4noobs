@@ -185,7 +185,7 @@ export default {
 </script>
 
 <template>
-  <div class="jumbo mb-4 mx-6">
+  <div class="jumbo mb-4 mx-6 lg:h-[38vw]">
     <div
       class="testo h-[60vh] flex flex-col justify-center items-center overflow-hidden"
     >

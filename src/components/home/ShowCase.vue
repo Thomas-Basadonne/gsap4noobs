@@ -75,12 +75,12 @@ export default {
 </script>
 
 <template>
-  <div class="my-5 ml-5">
+  <div class="mt-5 mb-20 ml-5">
     <h2 class="font-black text-8xl">
       Showcase
       <span class="gsap">GSAP</span>
     </h2>
-    <p class="font-bold text-xl">
+    <p class="font-bold text-xl mt-4">
       Scropri i <span class="best">migliori siti e progetti</span> animati con
       la librearia GSAP
     </p>
@@ -97,7 +97,7 @@ export default {
     </div>
   </div>
 
-  <div class="h-fit flex justify-end">
+  <div class="h-[250px] flex justify-end items-center">
     <BtnRotate class="info z-40 cursor-pointer" />
     <div
       class="more h-[200px] my-5 mr-5 text-end flex flex-col justify-center"
