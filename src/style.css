@@ -12,4 +12,12 @@
   .hover-link {
     @apply text-testo2 transition duration-300 ease-in-out hover:text-testo;
   }
+
+  .tutorial {
+    @apply bg-testo text-sfondo rounded-md px-3 py-4;
+  }
+
+  .selected {
+    @apply border-verde border-spacing-3 border-dashed;
+  }
 }

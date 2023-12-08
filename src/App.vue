@@ -3,6 +3,7 @@ import HeaderApp from "./components/_partials/HeaderApp.vue";
 import FooterApp from "./components/_partials/FooterApp.vue";
 
 import Jumbotron from "./components/home/Jumbotron.vue";
+import InstallSection from "./components/home/InstallSection.vue";
 import ShowCase from "./components/home/ShowCase.vue";
 
 export default {
@@ -16,6 +17,7 @@ export default {
     Jumbotron,
     FooterApp,
     ShowCase,
+    InstallSection,
   },
 };
 </script>
@@ -23,8 +25,10 @@ export default {
 <template>
   <div class="flex flex-col justify-between min-h-screen">
     <HeaderApp />
-    <main class="flex-grow w-full">
+    <main class="flex-grow w-full mt-12">
       <Jumbotron />
+      <hr class="mx-6 my-16 border-testo" />
+      <InstallSection />
       <hr class="mx-6 my-16 border-testo" />
       <ShowCase />
     </main>
