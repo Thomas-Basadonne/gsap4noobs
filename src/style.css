@@ -14,7 +14,7 @@
   }
 
   .tutorial {
-    @apply bg-testo text-sfondo rounded-md px-3 py-4;
+    @apply bg-testo text-sfondo rounded-md px-3 py-4 w-3/5 mx-auto;
   }
 
   .selected {

@@ -144,7 +144,7 @@ export default {
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="css" scoped>
 .races {
   width: fit-content;
   display: flex;
