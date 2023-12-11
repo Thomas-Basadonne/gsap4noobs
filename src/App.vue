@@ -29,7 +29,7 @@ export default {
       <Jumbotron />
       <hr class="mx-6 my-16 border-testo" />
       <ShowCase />
-      <hr class="mx-6 my-16 border-testo" />
+      <hr class="mx-6 mb-16 border-testo" />
       <InstallSection class="mt-2 mb-8" />
     </main>
     <footer class="bottom-0 w-full">

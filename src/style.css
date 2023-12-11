@@ -17,7 +17,11 @@
     @apply bg-testo text-sfondo rounded-md px-3 py-4 w-3/5 mx-auto;
   }
 
-  .selected {
-    @apply border-verde border-spacing-3 border-dashed;
+  .plugin-nav {
+    @apply text-testo hover:text-verde transition duration-500 text-3xl cursor-pointer;
+  }
+
+  .plugin {
+    @apply bg-sfondo text-testo text-center rounded-md hover:text-sfondo hover:bg-testo p-4;
   }
 }

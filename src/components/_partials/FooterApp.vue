@@ -104,7 +104,7 @@ export default {
         <span class="text-sm text-gray-500 sm:text-center"
           >© 2023
           <a
-            href="https://thomasbasadonne.com/"
+            href="https://thomasbasadonne.it/"
             class="hover:underline transition duration-300 ease-in-out hover:text-sfondo"
             >Thomas Basadonne</a
           >. All Rights Reserved.
