@@ -163,19 +163,25 @@ export default {
       onComplete() {
         const forma = document.querySelectorAll(".forma");
 
+        // Aggiunge un event listener per il movimento del mouse sull'intero documento
         document.addEventListener("mousemove", (e) => {
+          // Estrae le coordinate X e Y del mouse dall'evento
           const { clientX, clientY } = e;
+
+          // Calcola le coordinate del centro dello schermo
           const centerX = window.innerWidth / 2;
           const centerY = window.innerHeight / 2;
 
+          // Calcola la differenza normalizzata tra la posizione del mouse e il centro
           const deltaX = (clientX - centerX) / centerX;
           const deltaY = (clientY - centerY) / centerY;
 
+          // Utilizza la libreria GSAP per animare la forma
           gsap.to(forma, {
-            duration: 0.5,
-            x: deltaX * 20, // Modifica la sensibilità e l'ampiezza del movimento
-            y: deltaY * 20,
-            ease: "power2.out",
+            duration: 0.5, // Imposta la durata dell'animazione a 0.5 secondi
+            x: deltaX * 20, // Modifica la posizione orizzontale della forma in base al movimento del mouse
+            y: deltaY * 20, // Modifica la posizione verticale della forma in base al movimento del mouse
+            ease: "power2.out", // Utilizza una curva di easing per un'animazione più fluida
           });
         });
       },
