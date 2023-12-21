@@ -5,43 +5,52 @@ import BtnRotate from "../_partials/BtnRotate.vue";
 export default {
   components: { BtnRotate },
   mounted() {
+    // Registra il plugin ScrollTrigger di GSAP
     gsap.registerPlugin(ScrollTrigger);
 
+    // Animazione di oscillazione del colore per gli elementi con classe ".gsap"
     gsap.to(".gsap", {
       duration: 2.5,
       repeat: -1,
       yoyo: true,
       ease: "none",
-      color: "#1AE348",
+      color: "#1AE348", // Cambia il colore durante l'animazione
     });
 
+    // Seleziona l'elemento HTML con classe ".races"
     const races = document.querySelector(".races");
 
+    // Funzione per calcolare l'ammontare di scorrimento necessario
     function getScrollAmount() {
       let racesWidth = 0;
+      // Calcola la larghezza totale delle immagini all'interno di ".races"
       for (const img of races.querySelectorAll("img")) {
         racesWidth += img.offsetWidth;
       }
 
+      // Restituisce l'ammontare di scorrimento necessario per visualizzare tutte le immagini
       return -(racesWidth - window.innerWidth);
     }
 
+    // Animazione di scorrimento laterale per l'elemento ".races"
     const tween = gsap.to(races, {
-      x: getScrollAmount,
+      x: getScrollAmount, // Utilizza la funzione getScrollAmount per calcolare la posizione x
       duration: 3,
-      ease: "none",
+      ease: "none", // Nessun effetto di easing per uno scorrimento uniforme
     });
 
+    // Crea un trigger ScrollTrigger per l'elemento ".racesWrapper"
     ScrollTrigger.create({
       trigger: ".racesWrapper",
-      start: "top 0",
-      end: () => `+=${getScrollAmount() * -1}`,
-      pin: true,
-      animation: tween,
-      scrub: 1,
-      invalidateOnRefresh: true,
-      // markers: true,
+      start: "top 0", // Inizia l'animazione quando il top dell'elemento ".racesWrapper" raggiunge la cima della finestra
+      end: () => `+=${getScrollAmount() * -1}`, // Termina l'animazione quando l'utente ha scrollato attraverso l'ammontare di scorrimento necessario
+      pin: true, // "pinna" l'elemento durante l'animazione
+      animation: tween, // Applica l'animazione creata precedentemente
+      scrub: 1, // "scrub" per effetto parallasse durante lo scrolling
+      invalidateOnRefresh: true, // Invalida l'animazione quando la pagina viene aggiornata per evitare problemi di caching
+      // markers: true, // Abilita i marcatori di debug per visualizzare i trigger ScrollTrigger
     });
+
     const infoButton = document.querySelector(".info");
     const moreDiv = document.querySelector(".more");
 

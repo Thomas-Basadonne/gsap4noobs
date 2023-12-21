@@ -264,7 +264,7 @@ export default {
 .selected {
   padding: 1rem 2rem;
   border-width: 2px;
-  border-color: #00ff00; /* colore del tuo verde */
+  border-color: #00ff00;
   border-style: dashed;
   color: #00ff00;
 }
