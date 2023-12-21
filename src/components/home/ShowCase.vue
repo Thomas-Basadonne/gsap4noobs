@@ -91,35 +91,61 @@ export default {
       <div class="slide">
         <img src="../../assets/img/showcase/showcase1.png" alt="" />
         <div class="slide-text">
-          <a href="https://lnkd.in/dkHdcEFi" target="_blank">Snake Game</a> /
-          Gianluca Lomarco
+          <a
+            class="hover:text-verde hover:underline font-semibold"
+            href="https://lnkd.in/dkHdcEFi"
+            target="_blank"
+            >Snake Game</a
+          >
+          / Gianluca Lomarco
         </div>
       </div>
       <div class="slide">
         <img src="../../assets/img/showcase/showcase3.png" alt="" />
         <div class="slide-text">
-          <a href="https://liefamsterdam.nl/" target="_blank">Lief</a> / Nicolas
-          Garnier
+          <a
+            class="hover:text-verde hover:underline font-semibold"
+            href="https://liefamsterdam.nl/"
+            target="_blank"
+            >Lief</a
+          >
+          / Nicolas Garnier
         </div>
       </div>
       <div class="slide">
         <img src="../../assets/img/showcase/showcase2.png" alt="" />
         <div class="slide-text">
-          <a href="https://makepill.com/en" target="_blank">Make Pill</a>
+          <a
+            class="hover:text-verde hover:underline font-semibold"
+            href="https://makepill.com/en"
+            target="_blank"
+            >Make Pill</a
+          >
           / Agency
         </div>
       </div>
       <div class="slide">
         <img src="../../assets/img/showcase/showcase4.png" alt="" />
         <div class="slide-text">
-          <a href="https://noomoagency.com/" target="_blank">Noomo</a> / Netrix
+          <a
+            class="hover:text-verde hover:underline font-semibold"
+            href="https://noomoagency.com/"
+            target="_blank"
+            >Noomo</a
+          >
+          / Netrix
         </div>
       </div>
       <div class="slide">
         <img src="../../assets/img/showcase/showcase5.png" alt="" />
         <div class="slide-text">
-          <a href="https://lnkd.in/dkHdcEFi" target="_blank">Cyd Stumpel</a> /
-          Portfolio
+          <a
+            class="hover:text-verde hover:underline font-semibold"
+            href="https://lnkd.in/dkHdcEFi"
+            target="_blank"
+            >Cyd Stumpel</a
+          >
+          / Portfolio
         </div>
       </div>
     </div>
